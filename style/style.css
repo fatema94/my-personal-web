@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.navbar::before{
+    content: "";
+    background-color:rgb(38, 15, 59) ;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.navbar ul{
+    display: flex;
+    padding-left: 700px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(15, 15, 52);
+}
+.navbar ul li a:hover{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    font-size: 2rem;
+
+}
+.home::before{
+    content: "";
+    background: url(/image/bryan-garces-IXUM4cJynP0-unsplash.jpg)no-repeat center center cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
